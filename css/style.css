@@ -15,22 +15,52 @@ body {
   font-weight: 300;
   line-height: 1.6; }
 
-.top-nav {
-  background-color: #333;
-  height: 8rem;
-  width: 100vw;
-  display: flex;
-  padding: 0 1rem;
-  justify-content: space-between; }
-
 .nav {
+  background: #333;
+  height: 8rem;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between; }
+  .nav__drawer {
+    display: none; }
+    @media (max-width: 760px) {
+      .nav__drawer {
+        display: block;
+        float: right;
+        height: 4rem; } }
+    .nav__drawer-burger {
+      float: right;
+      position: absolute;
+      top: 2rem;
+      cursor: pointer; }
+    .nav__drawer-bar {
+      width: 4rem;
+      height: .2rem;
+      background: #fff;
+      margin: 1rem 4rem; }
+    .nav__drawer-list {
+      list-style: none;
+      transition: all .2s;
+      opacity: 0;
+      background: #333;
+      transform: translateX(110%) translateY(15%);
+      text-align: center; }
+    .nav__drawer:hover .nav__drawer-list {
+      transform: translateX(0) translateY(15%);
+      display: block;
+      opacity: 1; }
+  .nav__nav {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+    @media (max-width: 760px) {
+      .nav__nav {
+        display: none; } }
   .nav__logo {
     color: #fff;
     text-transform: uppercase;
     font-size: 3.5rem;
-    margin: 1rem 2rem; }
+    margin: 1rem 3rem; }
   .nav__list {
     list-style: none;
     display: flex;
