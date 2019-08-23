@@ -1,0 +1,47 @@
+.section__sort {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.sort {
+  display: flex;
+  // float: right;
+
+  &-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-grey;
+
+    &--active {
+      fill: $color-dark-grey-2;
+    }
+  }
+
+  & select {
+    background: $color-light-grey;
+    padding: 1.3rem;
+    font-size: 1.3rem;
+    color: $color-grey;
+    -webkit-appearance: none;
+    border: 1px solid $color-light-grey-2;
+    border-radius: 5px;
+    width: 20rem;
+    outline: none;
+    text-align-last: center;
+    margin-left: 1rem;
+  }
+
+
+}
+
+.icon-box {
+  width: 4.5rem;
+  height: 4.5rem;
+  background: $color-light-grey;
+  border: 1px solid $color-light-grey-2;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}

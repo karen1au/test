@@ -1,0 +1,23 @@
+.section__stats {
+  background: $color-light-grey;
+  padding: 5rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.stat {
+  &__box {
+    text-align: center;
+    margin: 2rem 4rem;
+  }
+  &__number {
+    font-size: 4rem;
+    font-weight: bold;
+    color: $color-dark-grey-2;
+  }
+  &__context {
+    font-size: 2rem;
+    color: $color-grey;
+  }
+}

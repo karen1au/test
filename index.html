@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <title>test - BMW</title>
+  </head>
+  <body class="container">
+    <header>
+      <div class="top-nav">
+        <div class="nav__logo">test</div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Features</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Pages</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+          <div class="nav__auth">
+            <a href="#" class="nav__auth-link">Login</a>
+          </div>
+          <div class="nav__search">
+            <svg class="nav__search-icon">
+              <use href="img/search.svg#search-icon" />
+            </svg>
+          </div>
+        </nav>
+      </div>
+      <div class="header">
+        <div class="banner-info">
+          <h1>BMW X4</h1>
+          <span
+            ><strong>$110,000 </strong>&sdot; 05-2016 &sdot; 0 miles &sdot; 190
+            kw(255 hp)</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section__form">
+        <form class="form" action="#">
+          <div class="form__group">
+            <select name="car-make" required>
+              <option value="" disabled selected>Select Make</option>
+              <option value="audi">Audi</option>
+              <option value="bmw">BMW</option>
+              <option value="chevrolet">Chevrolet</option>
+              <option value="Toyota">Toyota</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <select name="car-model" disabled>
+              <option value="" disabled selected>Select make first</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <select name="car-registration">
+              <option value="" disabled selected>First Registration</option>
+              <option value="value1">1</option>
+              <option value="value2">2</option>
+              <option value="value3">3</option>
+              <option value="value4">4</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <select name="car-maxmileage" required>
+              <option value="" disabled selected>Max Mileage</option>
+              <option value="5000">5000</option>
+              <option value="10000">10000</option>
+              <option value="20000">20000</option>
+              <option value="30000">30000</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <select name="car-maxprice">
+              <option value="" disabled selected>Max Price</option>
+              <option value="10000">$10,000</option>
+              <option value="20000">$20,000</option>
+              <option value="30000">$30,000</option>
+              <option value="40000">$40,000</option>
+            </select>
+          </div>
+
+          <input class="form__btn" type="submit" value="show results" />
+        </form>
+      </section>
+
+      <section class="section__sort">
+        <div class="sort">
+          <button class="icon-box">
+            <svg class="sort-icon sort-icon--active">
+              <use href="img/symbol-defs.svg#icon-grid" />
+            </svg>
+          </button>
+          <button class="icon-box">
+            <svg class="sort-icon">
+              <use href="img/symbol-defs.svg#icon-menu" />
+            </svg>
+          </button>
+          <div class="form__group">
+            <select name="sort-by">
+              <option value="" disabled selected>Sort by</option>
+              <option value="price-low" selected>Price (low-high)</option>
+              <option value="price-high">Price (high-low)</option>
+              <option value="alphabet">A-Z</option>
+              <option value="year">Year</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="results">
+        <div class="result-cards">
+          <div class="result-card">
+            <div class="result-card__header">
+              <img src="img/car-golf.jpeg" />
+              <span class="result-card__sold">Sold</span>
+              <span class="result-card__price">$22,000</span>
+              <div class="result-card__icons">
+                <div class="result-card__icon-box">
+                  <svg class="result-card__func-icon">
+                    <use href="img/symbol-defs.svg#icon-plus" />
+                  </svg>
+                </div>
+                <div class="result-card__icon-box">
+                  <svg class="result-card__func-icon">
+                    <use href="img/symbol-defs.svg#icon-star-outlined" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="result-card__details">
+              <h2 class="result-card__name">Volkswagen Golf 2.5l</h2>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/calendar.svg#Capa_1" />
+                </svg>
+                <span class="result-card__info">07-2015</span>
+              </div>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/dashboard.svg#Layer_1" />
+                </svg>
+                <span class="result-card__info">30,000 miles</span>
+              </div>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/heart-beat.svg#Layer_1" />
+                </svg>
+                <span class="result-card__info">130 kw(175 hp)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-card__header">
+              <img src="img/car-subaru.jpg" />
+              <span class="result-card__price">$28,500</span>
+              <div class="result-card__icons">
+                <div class="result-card__icon-box">
+                  <svg class="result-card__func-icon">
+                    <use href="img/symbol-defs.svg#icon-plus" />
+                  </svg>
+                </div>
+                <div class="result-card__icon-box">
+                  <svg class="result-card__func-icon">
+                    <use href="img/symbol-defs.svg#icon-star-outlined" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="result-card__details">
+              <h2 class="result-card__name">Subaru WRX</h2>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/calendar.svg#Capa_1" />
+                </svg>
+                <span class="result-card__info">01-2016</span>
+              </div>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/dashboard.svg#Layer_1" />
+                </svg>
+                <span class="result-card__info">10,000 miles</span>
+              </div>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/heart-beat.svg#Layer_1" />
+                </svg>
+                <span class="result-card__info">250 kw(335 hp)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-card__header">
+              <img src="img/car-infiniti.jpg" />
+              <span class="result-card__sold">Sold</span>
+              <span class="result-card__price">$35,000</span>
+              <div class="result-card__icons">
+                <div class="result-card__icon-box">
+                  <svg class="result-card__func-icon">
+                    <use href="img/symbol-defs.svg#icon-plus" />
+                  </svg>
+                </div>
+                <div class="result-card__icon-box">
+                  <svg class="result-card__func-icon">
+                    <use href="img/symbol-defs.svg#icon-star-outlined" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="result-card__details">
+              <h2 class="result-card__name">Infiniti Q50</h2>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/calendar.svg#Capa_1" />
+                </svg>
+                <span class="result-card__info">05-2016</span>
+              </div>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/dashboard.svg#Layer_1" />
+                </svg>
+                <span class="result-card__info">0 miles</span>
+              </div>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/heart-beat.svg#Layer_1" />
+                </svg>
+                <span class="result-card__info">190 kw(255 hp)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-card__header">
+              <img src="img/car-mercedez.jpeg" />
+              <span class="result-card__price">$36,000</span>
+              <div class="result-card__icons">
+                <div class="result-card__icon-box">
+                  <svg class="result-card__func-icon">
+                    <use href="img/symbol-defs.svg#icon-plus" />
+                  </svg>
+                </div>
+                <div class="result-card__icon-box">
+                  <svg class="result-card__func-icon">
+                    <use href="img/symbol-defs.svg#icon-star-outlined" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="result-card__details">
+              <h2 class="result-card__name">
+                Mercedes Benz ML (All Wheel Drive)
+              </h2>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/calendar.svg#Capa_1" />
+                </svg>
+                <span class="result-card__info">09-2014</span>
+              </div>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/dashboard.svg#Layer_1" />
+                </svg>
+                <span class="result-card__info">75,000 miles</span>
+              </div>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/heart-beat.svg#Layer_1" />
+                </svg>
+                <span class="result-card__info">210 kw(282 hp)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-card__header">
+              <img src="img/car-volvo.jpeg" />
+              <span class="result-card__price">$42,000</span>
+              <div class="result-card__icons">
+                <div class="result-card__icon-box">
+                  <svg class="result-card__func-icon">
+                    <use href="img/symbol-defs.svg#icon-plus" />
+                  </svg>
+                </div>
+                <div class="result-card__icon-box">
+                  <svg class="result-card__func-icon">
+                    <use href="img/symbol-defs.svg#icon-star-outlined" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="result-card__details">
+              <h2 class="result-card__name">Volvo V40 Cross Country</h2>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/calendar.svg#Capa_1" />
+                </svg>
+                <span class="result-card__info">05-2016</span>
+              </div>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/dashboard.svg#Layer_1" />
+                </svg>
+                <span class="result-card__info">0 miles</span>
+              </div>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/heart-beat.svg#Layer_1" />
+                </svg>
+                <span class="result-card__info">110 kw(150 hp)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-card__header">
+              <img src="img/car-audi.jpg" />
+              <span class="result-card__price">$45,000</span>
+              <div class="result-card__icons">
+                <div class="result-card__icon-box">
+                  <svg class="result-card__func-icon">
+                    <use href="img/symbol-defs.svg#icon-plus" />
+                  </svg>
+                </div>
+                <div class="result-card__icon-box">
+                  <svg class="result-card__func-icon">
+                    <use href="img/symbol-defs.svg#icon-star-outlined" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="result-card__details">
+              <h2 class="result-card__name">Audi TT RS</h2>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/calendar.svg#Capa_1" />
+                </svg>
+                <span class="result-card__info">03-2016</span>
+              </div>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/dashboard.svg#Layer_1" />
+                </svg>
+                <span class="result-card__info">10,000 miles</span>
+              </div>
+              <div class="result-card__details-row">
+                <svg class="result-card__icon">
+                  <use href="img/heart-beat.svg#Layer_1" />
+                </svg>
+                <span class="result-card__info">185 kw(248 hp)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <a href="#" class="page page-active">1</a>
+          <a href="#" class="page">2</a>
+          <a href="#" class="page">&rarr;</a>
+        </div>
+      </section>
+    </main>
+    <section class="section__stats">
+      <div class="stat__box">
+        <p class="stat__number">25</p>
+        <p class="stat__context">Years in Business</p>
+      </div>
+      <div class="stat__box">
+        <p class="stat__number">1,000+</p>
+        <p class="stat__context">Cars Sold</p>
+      </div>
+      <div class="stat__box">
+        <p class="stat__number">98%</p>
+        <p class="stat__context">Customers Satisfaction</p>
+      </div>
+      <div class="stat__box">
+        <p class="stat__number">10,000+</p>
+        <p class="stat__context">Registered Users</p>
+      </div>
+    </section>
+
+    <section class="section__news">
+      <h2>Latest Car News</h2>
+      <div class="news__cards">
+        <div class="news__card">
+          <div class="news__picture">
+            <img src="/img/news1.jpg" alt="news1" />
+          </div>
+          <div class="news__details">
+            <h3 class="news__details-title">50 years of pony-car style</h3>
+            <p class="news__details-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              oaut! Dolor beatae rem obcaecati ..
+            </p>
+            <div class="news__details-author">
+              <div class="news__details-author-pic">
+                <img src="/img/author.jpeg" alt="" />
+              </div>
+              <p>by John Doe</p>
+            </div>
+          </div>
+        </div>
+        <div class="news__card">
+          <div class="news__picture">
+            <img src="/img/news2.jpg" alt="news2" />
+          </div>
+          <div class="news__details">
+            <h3 class="news__details-title">Because 600 hp is not enough</h3>
+            <p class="news__details-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              oaut! Dolor beatae rem obcaecati ..
+            </p>
+            <div class="news__details-author">
+              <div class="news__details-author-pic">
+                <img src="/img/author.jpeg" alt="" />
+              </div>
+              <p>by John Doe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__cta">
+      <button class="cta__btn">Submit your vehicle &rarr;</button>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h2 class="footer__col-title">
+            Car Dealer Inc.
+          </h2>
+          <div class="footer__col-info">
+            <p>Address: 1 Fantasy Road, 10100 Car Haven, USA</p>
+            <p>Phone: 0800 555 123 456</p>
+            <p>Email: info@yourcompany.com</p>
+          </div>
+          <a href="#">
+          <div class="footer__mediabox">
+            <div class="footer__mediabox-iconbox">
+              <svg class="footer__mediabox-icon">
+                <use href="img/symbol-defs.svg#icon-facebook" />
+              </svg>
+            </div>
+          </a>
+            <a href="#">
+            <div class="footer__mediabox-iconbox">
+              <svg class="footer__mediabox-icon">
+                <use href="img/symbol-defs.svg#icon-twitter" />
+              </svg>
+            </div>
+          </a>
+            <a href="#">
+            <div class="footer__mediabox-iconbox">
+              <svg class="footer__mediabox-icon">
+                <use href="img/symbol-defs.svg#icon-google-plus" />
+              </svg>
+            </div>
+          </a>
+            <a href="#">
+            <div class="footer__mediabox-iconbox">
+              <svg class="footer__mediabox-icon">
+                <use href="img/symbol-defs.svg#icon-linkedin2" />
+              </svg>
+            </div>
+          </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <table class="footer__col-info footer__schedule">
+            <tr>
+              <th class="footer__col-title">Opening Hours</th>
+            </tr>
+            <tr>
+              <td class="footer__schedule-day">Monday</td>
+              <td class="footer__schedule-time">9:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td class="footer__schedule-day">Tuesday</td>
+              <td class="footer__schedule-time">9:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td class="footer__schedule-day">Wednesday</td>
+              <td class="footer__schedule-time">9:00 - 18:00</td>
+            </tr>
+            <tr class="active-day">
+              <td class="footer__schedule-day">Thursday</td>
+              <td class="footer__schedule-time">9:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td class="footer__schedule-day">Friday</td>
+              <td class="footer__schedule-time">9:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td class="footer__schedule-day">Saturday</td>
+              <td class="footer__schedule-time">9:00 - 12:00</td>
+            </tr>
+            <tr>
+              <td class="footer__schedule-day">Sunday</td>
+              <td class="footer__schedule-time">closed</td>
+            </tr>
+          </table>
+        </div>
+        <div class="footer__col">
+          <h2 class="footer__col-title">
+            Get the best deals first
+          </h2>
+          <form class="footer__subscribe">
+            <input type="email" placeholder="Your email address .." />
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="footer__col-info">No worries. We don't spam, promise.</p>
+        </div>
+      </div>
+      <p class="footer__copyright">
+          Copyright &copy; 2016 by Car Dealer Inc.
+      </p>
+    </footer>
+  </body>
+</html>

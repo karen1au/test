@@ -1,0 +1,37 @@
+// COLOR VARIABLES
+$color-dark-grey: #333;
+$color-dark-grey-2: #444;
+$color-dark-grey-3: #2b2b2b;
+$color-grey: #9a9a9a;
+$color-grey-2: #eee;
+$color-light-grey: #f8f8f8;
+$color-light-grey-2: #eaeaea;
+$color-grey-text: #787878;
+$color-pink: #e63946;
+$color-pink-2: #fa726c;
+$color-white: #fff; 
+
+$font-primary: "Trebuchet MS", Lucida Grande;
+
+$card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+
+}
+body {
+  font-family: $font-primary;
+  color: $color-dark-grey;
+  font-weight: 300;
+  line-height: 1.6;
+}

@@ -1,0 +1,20 @@
+.header {
+  background-image: linear-gradient(rgba($color-dark-grey-2, .5), rgba($color-dark-grey-2, .5)), url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 46rem;
+}
+
+.banner-info {
+  position: absolute;
+  bottom: 26%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  color: $color-white;
+  font-size: 1.9rem;
+}
+
+.banner-info span {
+  opacity: .6;
+}

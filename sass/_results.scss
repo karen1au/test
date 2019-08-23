@@ -1,0 +1,124 @@
+.result-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 4rem;
+  justify-items: center;
+}
+
+.result-card {
+  box-shadow: $card-shadow;
+  border-radius: 5px;
+  max-width: 42rem;
+
+  &__sold,
+  &__price,
+  &__icons {
+    position: absolute;
+    color: $color-white;
+  }
+
+  &__icons {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+  }
+
+  &__icon-box {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: grey;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    transition: all 0.2s;
+  }
+  &__icon-box:hover {
+    opacity: 1;
+  }
+
+  &__func-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: $color-white;
+  }
+
+  &__sold {
+    font-size: 1.7rem;
+    font-weight: 500;
+    top: 2rem;
+    left: -4rem;
+    transform: rotate(-45deg);
+    background: $color-pink-2;
+    text-align: center;
+    line-height: 3.3rem;
+    width: 15rem;
+  }
+  &__price {
+    bottom: 1rem;
+    left: 2rem;
+    font-size: 2.2rem;
+  }
+
+  &__header {
+    height: 31.5rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    & img {
+      height: 100%;
+    }
+  }
+  &__details {
+    padding: 2rem;
+  }
+  &__details-row {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    color: $color-dark-grey-2;
+  }
+
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-grey;
+  }
+
+  &__info {
+    font-size: 1.5rem;
+    color: $color-grey-text;
+    margin-left: 2rem;
+  }
+}
+
+.pagination {
+  text-align: center;
+  margin: 3rem;
+}
+.page {
+  background: $color-light-grey;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  color: $color-grey-text;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+
+.page-active {
+  font-weight: 100;
+  background: $color-white;
+}

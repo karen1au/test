@@ -1,0 +1,55 @@
+.form {
+  background-color: $color-light-grey;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 2.5rem;
+  grid-column-gap: 3.5rem;
+  &__group {
+    position: relative;
+    &::before {
+      position: absolute;
+      // top: 0;
+      // right: 0;
+      content: "";
+      height: .6rem;
+      width: .6rem;
+      right: 2rem;
+      top: 40%;
+      border-width: 0px 1px 1px 0px;
+      transform: rotate(45deg);  
+      border-style: solid;
+      border-color: $color-grey;
+    }
+  }
+
+  
+  & select {
+    background: $color-white;
+    padding: 1.3rem;
+    font-size: 1.5rem;
+    color: $color-grey;
+    -webkit-appearance: none;
+    border: 1px solid $color-light-grey-2;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+  }
+  & select[disabled] {
+    background: $color-grey-2; 
+  }
+
+  &__btn {
+    background: $color-pink;
+    color: $color-white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+  }
+
+
+}

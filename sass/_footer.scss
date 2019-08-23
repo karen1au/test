@@ -1,0 +1,100 @@
+.footer {
+
+  &__cols {
+  background: $color-dark-grey;
+  color: $color-white;
+  padding: 6rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 4rem;
+  justify-content: space-around;
+  }
+
+  &__col {
+
+    &-title {
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+      text-align: left;
+    }
+
+    &-info {
+      font-size: 1.6rem;
+      font-weight: 100;
+      & td {
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &__mediabox {
+    display: flex;
+    margin-top: 3rem;
+    &-iconbox {
+      width: 5rem;
+      height: 5rem;
+      background: $color-dark-grey-2;
+      margin-right: .6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all .2s;
+      &:hover {
+        background: $color-grey;
+      }
+    }
+    &-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: $color-white;
+    }
+  }
+
+  &__schedule {
+    width: 100%;
+    &-time {
+      text-align: right;
+      // padding-left: 16rem;
+    }
+  }
+
+  &__subscribe {
+    display: flex;
+    margin-bottom: 1.5rem;
+    & input {
+      width: 100%;
+      padding: 1.5rem;
+      font-size: 1.5rem;
+      font-family: inherit;
+      border: none;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      outline: none;
+      &::placeholder {color: $color-grey;} 
+    }
+    & button {
+      background: $color-pink;
+      padding: 1.5rem 1.5rem;
+      color: $color-white;
+      text-transform: uppercase;
+      border: none;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  &__copyright {
+    color: $color-grey;
+    background: $color-dark-grey-3;
+    padding: 2.5rem 4rem;
+    font-size: 1.5rem;
+  }
+}
+
+.active-day {
+  font-weight: bold;
+}
